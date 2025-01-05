@@ -65,4 +65,5 @@ public function index()
     return response()->json($customers, 200);
 }
 
+
 }

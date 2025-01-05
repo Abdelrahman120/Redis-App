@@ -17,8 +17,9 @@ class Customer extends Model
         'national_id',
     ];
 
-    public function orders()
-    {
-        return $this->hasMany(Order::class);
-    }
+ public function orders()
+{
+    return $this->hasMany(Order::class);
+}
+
 }

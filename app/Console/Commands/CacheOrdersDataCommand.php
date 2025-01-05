@@ -37,7 +37,7 @@ class CacheOrdersDataCommand extends Command
 
         $cacheKeyPrefix = 'orders_data_cache_chunk_';
         $chunkIndex = 1;
-        $maxRecords = 50000; 
+        $maxRecords = 10000; 
         $cachedRecords = 0;
         Order::with(['customer', 'products'])
             ->select('orders.*')

@@ -36,6 +36,9 @@ $(document).ready(function () {
     const table = $('#orders-table').DataTable({
         processing: true,
         serverSide: true,
+        searching: false,
+        scrollY: '400px',
+        scrollCollapse: true,
         ajax: {
             url: '/get-all-orders',
             type: 'GET',
